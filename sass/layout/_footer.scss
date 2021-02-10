@@ -1,0 +1,132 @@
+.address {
+  margin-right: 70px;
+}
+
+/* adress */
+.footer-section {
+  padding: 60px 0 0;
+  background-color: #2f303a;
+  display: block;
+}
+.container-footer {
+  display: flex;
+}
+.adress-description {
+  margin: 0;
+  padding-bottom: 9px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #ffffff;
+}
+.adress-list-footer {
+  display: block;
+}
+.adress-list-footer .mail {
+  margin: 0;
+  padding-bottom: 9px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+}
+.adress-list-footer .tel {
+  margin: 0;
+  padding-bottom: 60px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+}
+.address-social {
+  width: 206px;
+  padding-top: 12px;
+  margin-right: 93px;
+}
+.footer-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+.footer-social-list {
+  display: flex;
+}
+.footer-social-list > li:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-social-item {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  fill: #ffffff;
+  transition-property: background;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-social-item:hover,
+.footer-social-item:focus {
+  background: var(--accent-color);
+}
+.footer-social-icon {
+  width: 20px;
+  height: 20px;
+}
+.footer-email-input {
+  padding-top: 12px;
+}
+.email-input {
+  display: flex;
+}
+.footer-form-field {
+  display: flex;
+}
+.email-input-form {
+  margin-right: 12px;
+  padding-left: 16px;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: #2f303a;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+.email-input-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 0;
+  margin-right: 0;
+  border: 0;
+  padding: 10px 28px 10px 29px;
+  border-radius: 4px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+  fill: #ffffff;
+  background-color: var(--accent-color);
+  border-color: transparent;
+}
+.email-input-button svg {
+  margin-left: 10px;
+}

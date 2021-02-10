@@ -1,0 +1,19 @@
+@import './base/base';
+@import './layout/main';
+@import './utils/main';
+
+/* цвет основного текста #212121 */
+/* вторичный цвет #757575 */ /* цвет фона секции "Наша команда" #F5F4FA */
+/* цвет фона скции футер #2F303A */ /* белый #FFFFFF */ /* акцент #2196F3 */
+:root {
+  --filter-button-text-color: #212121;
+  --filter-button-bg-color: #f5f4fa;
+
+  --primary-text-color: #757575;
+  --title-text-clolr: #212121;
+  --accent-color: #2196f3;
+  --primary-bg-color: #ffffff;
+
+  --main-font-family: 'Roboto', sans-serif;
+  --sec-font-family: 'Raleway', sans-serif;
+}

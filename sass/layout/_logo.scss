@@ -1,0 +1,18 @@
+.logo {
+  margin-right: 276px;
+  display: flex;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  &.heder-logo {
+    color: #000000;
+  }
+  &.footer-logo {
+    color: #ffffff;
+  }
+  .logo-accent {
+    color: $accent-color;
+  }
+}
