@@ -5,6 +5,7 @@
   &-container {
     display: flex;
     align-items: center;
+    // padding: 10px 0;
   }
 }
 .nav {
@@ -82,6 +83,7 @@
   padding: 0;
   border: none;
   background-color: transparent;
+  padding: 10px 0;
 }
 .heder-menu-button .icon-cross {
   display: none;

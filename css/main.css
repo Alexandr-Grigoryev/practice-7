@@ -49,8 +49,12 @@ ul {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
   padding: 0 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
 }
 
 /* header */
@@ -152,6 +156,7 @@ ul {
   padding: 0;
   border: none;
   background-color: transparent;
+  padding: 10px 0;
 }
 
 .heder-menu-button .icon-cross {
@@ -201,17 +206,17 @@ ul {
 } */
 .logo {
   margin-right: 276px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   text-decoration: none;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
 }
 .logo.heder-logo {
   color: #000000;
+  padding: 16px 0;
 }
 .logo.footer-logo {
   color: #ffffff;
@@ -222,31 +227,35 @@ ul {
 
 .hero-section {
   border-top: 1px solid #ececec;
-  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 94px;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  margin-bottom: 60px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
   background: #c4c4c4;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../image/hero-Img-1.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/hero-Img-1.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/image/Header-img-(1).jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/image/Header-img-(1).jpg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .hero.container {
   width: 696px;
+  width: 360px;
   padding: 0;
 }
 .hero.container .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
   color: var(--primary-bg-color);
+  font-family: Roboto;
+  font-style: normal;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 42px;
+  /* or 162% */
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -258,10 +267,13 @@ ul {
   border: 0;
   padding: 10px 32px;
   border-radius: 4px;
-  font-family: inherit;
-  font-weight: 700;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 30px;
+  /* identical to box height, or 187% */
+  text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
   background-color: #2196f3;
@@ -269,38 +281,33 @@ ul {
 }
 
 .features {
-  margin-bottom: 94px;
+  margin-bottom: 60px;
 }
 
 .feature-list h3 {
   margin-top: 0px;
   margin-bottom: 10px;
   color: var(--title-text-clolr);
-  font-weight: 700;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
 .feature-list p {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 30px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
   font-size: 14px;
-  line-height: 1.71;
-}
-
-.feature-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.feature-list li {
-  width: 270px;
-}
-
-.feature-list li:not(:last-child) {
-  margin-right: 30px;
+  line-height: 24px;
+  /* or 171% */
+  letter-spacing: 0.03em;
 }
 
 .feature-item {
@@ -343,6 +350,7 @@ ul {
   background-image: url(../image/astronaut-1.svg);
 } */
 .workpage {
+  display: none;
   /* background: #e5e5e5; */
   margin-top: 0;
   margin-bottom: 94px;
@@ -361,16 +369,6 @@ ul {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-}
-
-.workpage-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.workpage-flex .item + .item {
-  margin-left: 30px;
 }
 
 .label {
@@ -403,7 +401,7 @@ ul {
 
 .team.section {
   background-color: #f5f4fa;
-  padding: 94px 0px;
+  padding: 60px 0px;
   /* outline: 1px solid coral; */
 }
 
@@ -412,24 +410,32 @@ ul {
 }
 
 .team.section p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
   font-size: 16px;
-  line-height: 1.19;
-  margin-bottom: 16px;
+  line-height: 19px;
+  /* identical to box height */
   text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .team-section-title {
-  margin-top: 0;
-  margin-bottom: 50px;
+  margin-top: 0px;
+  margin-bottom: 30px;
   color: var(--title-text-clolr);
+  font-family: Roboto;
+  font-style: normal;
   font-weight: bold;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 33px;
+  /* identical to box height */
   text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .team-name {
-  margin: 0;
+  margin-bottom: 10px;
   color: var(--title-text-clolr);
   font-weight: 500;
   font-size: 16px;
@@ -437,29 +443,16 @@ ul {
   text-align: center;
 }
 
-.team-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .team-flex > li {
+  margin-bottom: 30px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-flex > li:not(:last-child) {
-  margin-right: 30px;
-}
-
 .team-flex img {
   margin-bottom: 30px;
-}
-
-.team-flex h3 {
-  margin-bottom: 10px;
 }
 
 .team-social {
@@ -469,7 +462,7 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 30px;
+  padding-bottom: 24px;
 }
 
 .team-social > li:not(:last-child) {
@@ -516,26 +509,19 @@ ul {
 }
 
 .clients-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 .clients-title {
   margin-top: 0;
-  padding-top: 92px;
-  margin-bottom: 50px;
+  padding-top: 60px;
+  margin-bottom: 30px;
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   color: var(--title-text-clolr);
-}
-
-.client-item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .clients-link {

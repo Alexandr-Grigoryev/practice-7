@@ -1,11 +1,11 @@
 .clients-list {
-  display: flex;
-  padding-bottom: 50px;
+  // display: flex;
+  margin-bottom: 60px;
 }
 .clients-title {
   margin-top: 0;
-  padding-top: 92px;
-  margin-bottom: 50px;
+  padding-top: 60px;
+  margin-bottom: 30px;
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -13,9 +13,9 @@
   text-align: center;
   color: var(--title-text-clolr);
 }
-.client-item:not(:last-child) {
-  margin-right: 30px;
-}
+// .client-item:not(:last-child) {
+//   margin-right: 30px;
+// }
 .clients-link {
   display: flex;
   justify-content: center;
