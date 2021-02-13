@@ -2,6 +2,7 @@
 
 .header {
   background-color: #ffffff;
+  position: relative;
   &-container {
     display: flex;
     align-items: center;
@@ -100,11 +101,27 @@
   position: absolute;
   top: 100%;
   left: 0;
+
   // width: 100%;
   &.is-open {
     display: block;
+    z-index: 1;
+    background: #ffffff;
+
+    width: 480px;
+    height: 453px;
+    // .header-container {
+    //   display: none;
+    // }
+    // .hero-section {
+    //   // display: none;
+    //   min-width: 100px;
+    // }
   }
 }
+// .menu-container.is-open .hero-section {
+//   display: none;
+// }
 /* .mail-item::before {
   display: inline-flex;
   margin-right: 10px;

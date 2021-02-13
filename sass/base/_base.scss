@@ -39,9 +39,11 @@ ul {
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+// .outer {
+//   position: relative;
+// }
 .container {
-  position: relative;
+  // position: relative;
   margin-left: auto;
   margin-right: auto;
   // width: 1200px;
