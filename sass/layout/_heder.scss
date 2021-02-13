@@ -10,11 +10,17 @@
   }
 }
 .nav {
-  display: flex;
+  @media screen and(min-width: 1600px) {
+    margin-right: 305px;
+  }
+
   align-items: center;
   &-list {
-    display: flex;
     list-style: none;
+    text-align: center;
+    @media screen and(min-width: 1600px) {
+      display: flex;
+    }
   }
   &-list-item {
     position: relative;
@@ -23,18 +29,26 @@
     color: $accent-color;
   }
   &-list-item a {
-    display: block;
+    display: inline-block;
     padding-top: 32px;
     padding-bottom: 32px;
   }
   &-list li:not(:last-child) {
-    margin-right: 50px;
+    @media screen and(min-width: 1600px) {
+      margin-right: 50px;
+    }
   }
 }
 .list-mail-tel {
-  margin-left: auto;
   list-style: none;
-  display: flex;
+
+  text-align: center;
+  @media screen and(min-width: 1600px) {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+  }
+
   .link {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -50,8 +64,10 @@
     height: 16px;
   }
   .item + .item {
-    margin-left: 30px;
     display: block;
+    @media screen and(min-width: 1600px) {
+      margin-left: 30px;
+    }
   }
 }
 .link {
@@ -85,6 +101,9 @@
   border: none;
   background-color: transparent;
   padding: 10px 0;
+  @media screen and(min-width: 1600px) {
+    display: none;
+  }
 }
 .heder-menu-button .icon-cross {
   display: none;
@@ -96,11 +115,16 @@
 .heder-menu-button.is-open .icon-cross {
   display: block;
 }
+
 .menu-container {
   display: none;
   position: absolute;
   top: 100%;
   left: 0;
+  @media screen and(min-width: 1600px) {
+    display: flex;
+    position: static;
+  }
 
   // width: 100%;
   &.is-open {
@@ -119,9 +143,7 @@
     // }
   }
 }
-// .menu-container.is-open .hero-section {
-//   display: none;
-// }
+
 /* .mail-item::before {
   display: inline-flex;
   margin-right: 10px;

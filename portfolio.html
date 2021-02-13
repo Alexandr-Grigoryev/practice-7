@@ -18,47 +18,64 @@
   </head>
 
   <body class="outer">
-    <section class="header-section">
+    <section class="header">
       <header class="container">
         <!-- nav -->
         <div class="header-container">
-          <nav class="nav">
-            <a href="./index.html" class="logo-link">
-              <span class="logo-accent">Web</span>Studio
-            </a>
-            <ul class="nav-list">
-              <li class="nav-list-item">
-                <a href="./index.html" class="link">Студия</a>
+          <a href="./index.html" class="logo heder-logo">
+            <span class="logo-accent">Web</span>Studio
+          </a>
+
+          <button
+            type="button"
+            class="heder-menu-button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg
+              width="40px"
+              height="40px"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use class="icon-menu" href="./sprite.svg#menu"></use>
+              <use class="icon-cross" href="./sprite.svg#cross"></use>
+            </svg>
+          </button>
+          <div class="menu-container" id="menu-container" data-menu>
+            <nav class="nav">
+              <ul class="nav-list">
+                <li class="nav-list-item">
+                  <a href="./index.html" class="link current studio">Студия</a>
+                </li>
+                <li class="nav-list-item">
+                  <a href="./portfolio.html" class="link">Портфолио</a>
+                </li>
+                <li class="nav-list-item">
+                  <a href="" class="link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+
+            <ul class="list-mail-tel">
+              <li class="item">
+                <a href="mailto:info@devstudio.com" class="link">
+                  <svg class="mail-icon">
+                    <use href="./sprite.svg#envelope-hover"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
               </li>
-              <li class="nav-list-item">
-                <a href="./portfolio.html" class="link current portfolio"
-                  >Портфолио</a
-                >
-              </li>
-              <li class="nav-list-item">
-                <a href="" class="link">Контакты</a>
+              <li class="item">
+                <a class="link" href="tel:+380961111111"
+                  ><svg class="smartphone-icon">
+                    <use href="./sprite.svg#smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
               </li>
             </ul>
-          </nav>
-
-          <ul class="list-mail-tel">
-            <li class="item">
-              <a href="mailto:info@devstudio.com" class="link">
-                <svg class="mail-icon">
-                  <use href="./sprite.svg#envelope-hover"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="item">
-              <a class="link" href="tel:+380961111111"
-                ><svg class="smartphone-icon">
-                  <use href="./sprite.svg#smartphone"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
       </header>
     </section>
@@ -98,7 +115,7 @@
             <li class="portfolio-projects-flex-item">
               <a href="">
                 <div class="projects-link">
-                  <img src="./image/img-1.jpg" alt="" />
+                  <img src="./image/portfolio-mobile/img.jpg" alt="" />
                   <div class="projects-overlay">
                     <p class="projects-overlay-text">
                       Технокряк это современная площадка распространения
@@ -118,7 +135,7 @@
             <li class="portfolio-projects-flex-item">
               <a href="" class="projects-link"
                 ><div class="projects-link">
-                  <img src="./image/img-2.jpg" alt="" />
+                  <img src="./image/portfolio-mobile/img-2.jpg" alt="" />
                   <div class="projects-overlay">
                     <p class="projects-overlay-text">
                       Технокряк это современная площадка распространения
@@ -138,7 +155,7 @@
             <li class="portfolio-projects-flex-item">
               <a href="" class="projects-link"
                 ><div class="projects-link">
-                  <img src="./image/img-3.jpg" alt="" />
+                  <img src="./image/portfolio-mobile/img-3.jpg" alt="" />
                   <div class="projects-overlay">
                     <p class="projects-overlay-text">
                       Технокряк это современная площадка распространения
@@ -157,7 +174,7 @@
             <li class="portfolio-projects-flex-item">
               <a href="" class="projects-link"
                 ><div class="projects-link">
-                  <img src="./image/img-4.jpg" alt="" />
+                  <img src="./image/portfolio-mobile/img-4.jpg" alt="" />
                   <div class="projects-overlay">
                     <p class="projects-overlay-text">
                       Технокряк это современная площадка распространения
@@ -176,7 +193,7 @@
             <li class="portfolio-projects-flex-item">
               <a href="" class="projects-link"
                 ><div class="projects-link">
-                  <img src="./image/img-5.jpg" alt="" />
+                  <img src="./image/portfolio-mobile/img-5.jpg" alt="" />
                   <div class="projects-overlay">
                     <p class="projects-overlay-text">
                       Технокряк это современная площадка распространения
@@ -195,7 +212,7 @@
             <li class="portfolio-projects-flex-item">
               <a href="" class="projects-link"
                 ><div class="projects-link">
-                  <img src="./image/img-6.jpg" alt="" />
+                  <img src="./image/portfolio-mobile/img-6.jpg" alt="" />
                   <div class="projects-overlay">
                     <p class="projects-overlay-text">
                       Технокряк это современная площадка распространения
@@ -214,7 +231,7 @@
             <li class="portfolio-projects-flex-item">
               <a href="" class="projects-link"
                 ><div class="projects-link">
-                  <img src="./image/img-7.jpg" alt="" />
+                  <img src="./image/portfolio-mobile/img-7.jpg" alt="" />
                   <div class="projects-overlay">
                     <p class="projects-overlay-text">
                       Технокряк это современная площадка распространения
@@ -233,7 +250,7 @@
             <li class="portfolio-projects-flex-item">
               <a href="" class="projects-link"
                 ><div class="projects-link">
-                  <img src="./image/img-8.jpg" alt="" />
+                  <img src="./image/portfolio-mobile/img-8.jpg" alt="" />
                   <div class="projects-overlay">
                     <p class="projects-overlay-text">
                       Технокряк это современная площадка распространения
@@ -252,7 +269,7 @@
             <li class="portfolio-projects-flex-item">
               <a href="" class="projects-link"
                 ><div class="projects-link">
-                  <img src="./image/img-9.jpg" alt="" />
+                  <img src="./image/portfolio-mobile/img-9.jpg" alt="" />
                   <div class="projects-overlay">
                     <p class="projects-overlay-text">
                       Технокряк это современная площадка распространения
@@ -273,79 +290,84 @@
       </section>
     </main>
     <section class="footer-section">
-      <footer class="container container-footer">
-        <div class="address">
-          <a href="./index.html" class="footer-logo-link">
-            <span class="logo-accent">Web</span>Studio
-          </a>
+      <section class="footer-section">
+        <footer class="container">
+          <div class="footer-container">
+            <div class="address">
+              <a href="./index.html" class="logo footer-logo">
+                <span class="logo-accent">Web</span>Studio
+              </a>
 
-          <address>
-            <ul class="list adress-list-footer">
-              <li>
-                <p class="adress-description">
-                  г. Киев, пр-т Леси Украинки, 26
-                </p>
-              </li>
-              <li><p class="mail">info@example.com</p></li>
-              <li><p class="tel">+38 099 111 11 11</p></li>
-            </ul>
-          </address>
-        </div>
-        <div class="address-social">
-          <h2 class="footer-title">присоединяйтесь</h2>
-          <ul class="footer-social-list list">
-            <li>
-              <a class="footer-social-item" href=""
-                ><svg class="footer-social-icon">
-                  <use href="./sprite.svg#Ellipse-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="footer-social-item" href=""
-                ><svg class="footer-social-icon">
-                  <use href="./sprite.svg#Ellipse-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="footer-social-item" href=""
-                ><svg class="footer-social-icon">
-                  <use href="./sprite.svg#Ellipse-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="footer-social-item" href=""
-                ><svg class="footer-social-icon">
-                  <use href="./sprite.svg#Ellipse-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-email-input">
-          <h2 class="footer-title">Подпишитесь на рассылку</h2>
-          <div class="email-input">
-            <form class="footer-form-field">
-              <label>
-                <input
-                  type="email"
-                  name="email"
-                  class="email-input-form"
-                  placeholder="E-mail"
-                />
-              </label>
-              <button type="submit" class="email-input-button">
-                Подписаться
-                <svg width="24" height="24">
-                  <use href="./sprite.svg#send-button"></use>
-                </svg>
-              </button>
-            </form>
+              <address>
+                <ul class="list adress-list-footer">
+                  <li>
+                    <p class="adress-description">
+                      г. Киев, пр-т Леси Украинки, 26
+                    </p>
+                  </li>
+                  <li><p class="mail">info@example.com</p></li>
+                  <li><p class="tel">+38 099 111 11 11</p></li>
+                </ul>
+              </address>
+            </div>
+            <div class="address-social">
+              <h2 class="footer-title">присоединяйтесь</h2>
+              <ul class="footer-social-list list">
+                <li>
+                  <a class="footer-social-item" href=""
+                    ><svg class="footer-social-icon">
+                      <use href="./sprite.svg#Ellipse-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="footer-social-item" href=""
+                    ><svg class="footer-social-icon">
+                      <use href="./sprite.svg#Ellipse-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="footer-social-item" href=""
+                    ><svg class="footer-social-icon">
+                      <use href="./sprite.svg#Ellipse-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="footer-social-item" href=""
+                    ><svg class="footer-social-icon">
+                      <use href="./sprite.svg#Ellipse-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </footer>
+          <div class="footer-email-input">
+            <h2 class="footer-title">Подпишитесь на рассылку</h2>
+            <div class="email-input">
+              <form class="footer-form-field">
+                <label>
+                  <input
+                    type="email"
+                    name="email"
+                    class="email-input-form"
+                    placeholder="E-mail"
+                  />
+                </label>
+                <button type="submit" class="email-input-button">
+                  Подписаться
+                  <svg width="24" height="24">
+                    <use href="./sprite.svg#send-button"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </footer>
+      </section>
     </section>
+    <script src="./menu.js"></script>
   </body>
 </html>

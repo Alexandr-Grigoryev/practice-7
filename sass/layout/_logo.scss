@@ -9,10 +9,18 @@
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  @media screen and(min-width: 1600px) {
+    font-size: 26px;
+    line-height: 31px;
+  }
   &.heder-logo {
     color: #000000;
     padding: 16px 0;
     margin-right: 276px;
+    @media screen and(min-width: 1600px) {
+      margin-right: 93px;
+      margin-left: 215px;
+    }
   }
   &.footer-logo {
     color: #ffffff;
