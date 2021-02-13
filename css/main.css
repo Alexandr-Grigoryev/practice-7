@@ -518,11 +518,16 @@ ul {
   margin: -15px;
   margin-bottom: 60px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 481px) {
   .clients-list {
     width: 480px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 495px) {
+  .clients-list {
+    margin-left: -15px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -530,6 +535,11 @@ ul {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 800px) {
+  .clients-list {
+    margin-left: -15px;
   }
 }
 .clients-list .client-item {
