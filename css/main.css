@@ -284,6 +284,12 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
 }
+@media screen and (min-width: 768px) {
+  .hero-section {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/sass/image/tablet.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/sass/image/tablet.jpg");
+  }
+}
 
 .hero.container {
   width: 696px;
@@ -809,6 +815,9 @@ ul {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -819,9 +828,14 @@ ul {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    margin-left: 200px;
+    margin-right: 93px;
   }
 }
 
+.address {
+  text-align: center;
+}
 @media screen and (min-width: 1600px) {
   .address {
     margin-right: 70px;
@@ -832,12 +846,6 @@ ul {
   text-align: center;
   padding-top: 12px;
 }
-@media screen and (min-width: 1600px) {
-  .address-social {
-    margin-right: 93px;
-  }
-}
-
 /* adress */
 .footer-section {
   padding: 60px 0;
@@ -854,6 +862,9 @@ ul {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -949,12 +960,20 @@ ul {
 .footer-email-input {
   padding-top: 12px;
 }
+@media screen and (min-width: 1600px) {
+  .footer-email-input {
+    margin-right: 200px;
+  }
+}
 
 @media screen and (min-width: 1600px) {
   .footer-form-field {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -962,7 +981,6 @@ ul {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
   padding-left: 16px;
   width: 450px;
   height: 50px;
@@ -980,6 +998,11 @@ ul {
   font-size: 16px;
   line-height: 20px;
 }
+@media screen and (max-width: 1600px) {
+  .email-input-form {
+    margin-bottom: 20px;
+  }
+}
 @media screen and (min-width: 1600px) {
   .email-input-form {
     margin-right: 12px;
@@ -988,7 +1011,12 @@ ul {
 }
 
 .email-input-button {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
   margin-left: auto;
   margin-right: auto;
