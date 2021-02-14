@@ -568,12 +568,6 @@ ul {
   margin: -15px;
   margin-bottom: 60px;
 }
-@media screen and (min-width: 1600px) {
-  .clients-list {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
-}
 @media screen and (min-width: 481px) {
   .clients-list {
     max-width: 480px;
@@ -586,6 +580,13 @@ ul {
     max-width: 768px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .clients-list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    max-width: 1600px;
   }
 }
 .clients-list .client-item {
@@ -810,9 +811,31 @@ ul {
         justify-content: space-around;
   }
 }
+@media screen and (min-width: 1600px) {
+  .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
 
-.address {
+@media screen and (min-width: 1600px) {
+  .address {
+    margin-right: 70px;
+    text-align: center;
+  }
+}
+.address-social {
   text-align: center;
+  padding-top: 12px;
+}
+@media screen and (min-width: 1600px) {
+  .address-social {
+    margin-right: 93px;
+  }
 }
 
 /* adress */
@@ -820,6 +843,18 @@ ul {
   padding: 60px 0;
   background-color: #2f303a;
   display: block;
+}
+@media screen and (min-width: 1600px) {
+  .footer-section .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 215px;
+    margin-right: 215px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .adress-description {
@@ -851,11 +886,6 @@ ul {
   font-size: 14px;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.6);
-}
-
-.address-social {
-  text-align: center;
-  padding-top: 12px;
 }
 
 .footer-title {
@@ -920,6 +950,14 @@ ul {
   padding-top: 12px;
 }
 
+@media screen and (min-width: 1600px) {
+  .footer-form-field {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .email-input-form {
   display: block;
   margin-left: auto;
@@ -941,6 +979,12 @@ ul {
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
+}
+@media screen and (min-width: 1600px) {
+  .email-input-form {
+    margin-right: 12px;
+    width: 358px;
+  }
 }
 
 .email-input-button {
