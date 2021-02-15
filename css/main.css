@@ -63,6 +63,14 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .header-container {
+    max-width: 768px;
+  }
 }
 
 .nav {
@@ -79,11 +87,12 @@ ul {
   list-style: none;
   text-align: center;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 768px) {
   .nav-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-right: 84px;
   }
 }
 .nav-list-item {
@@ -174,7 +183,7 @@ ul {
   background-color: transparent;
   padding: 10px 0;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 768px) {
   .heder-menu-button {
     display: none;
   }
@@ -197,6 +206,14 @@ ul {
   position: absolute;
   top: 100%;
   left: 0;
+}
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: static;
+  }
 }
 @media screen and (min-width: 1600px) {
   .menu-container {
@@ -256,6 +273,12 @@ ul {
   color: #000000;
   padding: 16px 0;
   margin-right: 276px;
+}
+@media screen and (min-width: 768px) {
+  .logo.heder-logo {
+    margin-left: 15px;
+    margin-right: 88px;
+  }
 }
 @media screen and (min-width: 1600px) {
   .logo.heder-logo {
@@ -981,6 +1004,7 @@ ul {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20px;
   padding-left: 16px;
   width: 450px;
   height: 50px;
@@ -998,14 +1022,10 @@ ul {
   font-size: 16px;
   line-height: 20px;
 }
-@media screen and (max-width: 1600px) {
-  .email-input-form {
-    margin-bottom: 20px;
-  }
-}
 @media screen and (min-width: 1600px) {
   .email-input-form {
     margin-right: 12px;
+    margin-bottom: 0;
     width: 358px;
   }
 }
