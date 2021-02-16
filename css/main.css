@@ -44,6 +44,38 @@ ul {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 767px) {
+  .link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    letter-spacing: 0.02em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+    letter-spacing: 0.02em;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+  }
+}
 
 .container {
   margin-left: auto;
@@ -72,20 +104,35 @@ ul {
     max-width: 768px;
   }
 }
+@media screen and (min-width: 1600px) {
+  .header-container {
+    max-width: 1600px;
+  }
+}
 
 .nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (min-width: 1600px) {
-  .nav {
-    margin-right: 305px;
-  }
-}
 .nav-list {
   list-style: none;
   text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-bottom: 100px;
+  }
 }
 @media screen and (min-width: 768px) {
   .nav-list {
@@ -93,6 +140,11 @@ ul {
     display: -ms-flexbox;
     display: flex;
     margin-right: 84px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .nav-list {
+    margin-right: 305px;
   }
 }
 .nav-list-item {
@@ -106,9 +158,20 @@ ul {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (max-width: 767px) {
+  .nav-list-item a {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 768px) {
   .nav-list li:not(:last-child) {
     margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav-list li:not(:last-child) {
+    margin-bottom: 32px;
   }
 }
 
@@ -116,12 +179,16 @@ ul {
   list-style: none;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .list-mail-tel {
+    text-align: start;
+  }
+}
 @media screen and (min-width: 1600px) {
   .list-mail-tel {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: auto;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -150,6 +217,16 @@ ul {
   }
 }
 
+.header-social a {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding: 0 10px;
+}
+@media screen and (min-width: 767px) {
+  .header-social {
+    display: none;
+  }
+}
+
 .link.current.studio::after {
   content: "";
   position: absolute;
@@ -160,6 +237,11 @@ ul {
   border-radius: 50px;
   height: 4px;
   width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .link.current.studio::after {
+    display: none;
+  }
 }
 .link.current.portfolio::after {
   content: "";
@@ -172,6 +254,11 @@ ul {
   height: 4px;
   width: 76px;
 }
+@media screen and (max-width: 768px) {
+  .link.current.portfolio::after {
+    display: none;
+  }
+}
 
 .heder-menu-button {
   display: -webkit-inline-box;
@@ -182,6 +269,7 @@ ul {
   border: none;
   background-color: transparent;
   padding: 10px 0;
+  z-index: 2;
 }
 @media screen and (min-width: 768px) {
   .heder-menu-button {
@@ -204,8 +292,17 @@ ul {
 .menu-container {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 0;
   left: 0;
+  width: 100%;
+  height: 100vh;
+}
+@media screen and (max-width: 767px) {
+  .menu-container {
+    padding-left: 40px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
 }
 @media screen and (min-width: 768px) {
   .menu-container {
@@ -213,6 +310,7 @@ ul {
     display: -ms-flexbox;
     display: flex;
     position: static;
+    height: 100%;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -221,14 +319,37 @@ ul {
     display: -ms-flexbox;
     display: flex;
     position: static;
+    height: 100%;
   }
 }
 .menu-container.is-open {
   display: block;
   z-index: 1;
   background: #ffffff;
-  width: 480px;
-  height: 453px;
+}
+@media screen and (max-width: 767px) {
+  .menu-container.is-open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-container.is-open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 /* .mail-item::before {
@@ -272,7 +393,7 @@ ul {
 .logo.heder-logo {
   color: #000000;
   padding: 16px 0;
-  margin-right: 276px;
+  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .logo.heder-logo {
