@@ -1,4 +1,6 @@
 .backdrop {
+  overflow-y: scroll;
+  z-index: 2;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -17,4 +19,9 @@
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.7);
+  @media screen and (max-width: 768px) {
+    transform: none;
+    transform: scale(0.7);
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
