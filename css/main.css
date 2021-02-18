@@ -66,7 +66,7 @@ ul {
     letter-spacing: 0.02em;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .link {
     font-family: Roboto;
     font-style: normal;
@@ -104,9 +104,9 @@ ul {
     max-width: 768px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .header-container {
-    max-width: 1600px;
+    max-width: 1170px;
   }
 }
 
@@ -142,9 +142,9 @@ ul {
     margin-right: 84px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .nav-list {
-    margin-right: 305px;
+    margin-right: auto;
   }
 }
 .nav-list-item {
@@ -184,7 +184,7 @@ ul {
     text-align: start;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .list-mail-tel {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -192,6 +192,7 @@ ul {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-left: auto;
   }
 }
 .list-mail-tel .link {
@@ -211,7 +212,7 @@ ul {
 .list-mail-tel .item + .item {
   display: block;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .list-mail-tel .item + .item {
     margin-left: 30px;
   }
@@ -313,7 +314,7 @@ ul {
     height: 100%;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .menu-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -384,7 +385,7 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .logo {
     font-size: 26px;
     line-height: 31px;
@@ -401,10 +402,10 @@ ul {
     margin-right: 88px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .logo.heder-logo {
     margin-right: 93px;
-    margin-left: 215px;
+    margin-left: auto;
   }
 }
 .logo.footer-logo {
@@ -416,6 +417,7 @@ ul {
 
 .hero-section {
   border-top: 1px solid #ececec;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 60px;
@@ -425,20 +427,36 @@ ul {
   background: #c4c4c4;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../image/Header-img-1.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/Header-img-1.jpg");
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 480px) {
+  .hero-section {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../image/Header-img-1.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/Header-img-1.jpg");
+  }
+}
+@media screen and (min-width: 480px) {
   .hero-section {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../image/hero-tablet-img-1.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/hero-tablet-img-1.jpg");
   }
 }
+@media screen and (min-width: 768px) {
+  .hero-section {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../image/hero/img.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/hero/img.jpg");
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
 
 .hero.container {
-  width: 696px;
-  width: 360px;
+  max-width: 360px;
   padding: 0;
+}
+@media screen and (min-width: 768px) {
+  .hero.container {
+    max-width: 696px;
+  }
 }
 .hero.container .hero-title {
   margin-top: 0;
@@ -453,6 +471,19 @@ ul {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .hero.container .hero-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    /* or 136% */
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
 }
 .hero.container .hero-button {
   cursor: pointer;
