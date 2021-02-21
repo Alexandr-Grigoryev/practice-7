@@ -7,10 +7,13 @@
 //   display: block;
 // }
 .team-set {
-  width: 480px;
+  // @media screen and(min-width: 480px) {
+  max-width: 450px;
   margin-left: auto;
   margin-right: auto;
+  // }
 }
+
 .team-position {
   font-family: Roboto;
   font-style: normal;

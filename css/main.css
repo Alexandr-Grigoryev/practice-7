@@ -644,7 +644,7 @@ ul {
 }
 
 .team-set {
-  width: 480px;
+  max-width: 450px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -895,7 +895,7 @@ ul {
 }
 @media screen and (min-width: 480px) {
   .portfolio-projects-set {
-    max-width: 480px;
+    max-width: 450px;
     margin-left: auto;
     margin-right: auto;
   }
